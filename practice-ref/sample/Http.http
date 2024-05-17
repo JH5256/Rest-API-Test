@@ -1,0 +1,27 @@
+### 1번
+GET http://localhost:8080/posts/findPosts
+
+### 2번
+GET http://localhost:8080/posts/findPosts/5
+
+### 3번
+POST http://localhost:8080/posts/registPost
+Content-Type: application/json
+
+{
+  "title": "제목6",
+  "content": "내용6",
+  "writer": "아아아"
+}
+
+### 4번
+PUT http://localhost:8080/posts/modifyPost/5
+Content-Type: application/json
+
+{
+  "title": "제목66",
+  "content": "내용66"
+}
+
+### 5번
+DELETE http://localhost:8080/posts/deletePost/5
